@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  /* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+  /* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Responsive columns */
+    @media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
+}
+
+.container {
+    background-color: rgb(243, 238, 211);
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1300px;
+    border-radius: 10px;
+    height: 28rem;
+}
+
+.card {
+    background-color: white;
+    border: 3px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f9fbe9;
+    border-radius: 10px;
+}
+
+
+.start__text {
+    text-align: center;
+}
+
+
+.img-card {
+    width: 10rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.img-card:hover {
+    width: 12rem;
+}
+
+
+.wide-card {
+    background-color: white;
+    border: 3px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    background-color: #f4f5ee;
+    border-radius: 10px;
+}
+
+.wide-img {
+    width: 20rem;
+    border-radius: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wide-img-1 {
+    width: 25rem;
+    border-radius: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+.wide-text {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.img-dvor {
+    border-radius: 10px;
+}
+
+/* Container holding the image and the text */
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0); /* Text color */
+    font-size: 50px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Font family */
+    padding: 20px; /* Add some padding */
+    background-color: rgba(255, 255, 255, 0.835);
+    border-radius: 10px;
+    width: 50rem;
+    transition: 0.4s ease;
+}
+
+
+
+#parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bg__wide-text {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 1,9rem;
+}
+
+
+.navbar {
+    background-color: #fffbc5;
+    overflow: hidden;
+    transition: 0.4s ease;
+    border: 4px;
+    border-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}
+
+.nav-a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-color: bisque;
+}
+
+.nav-a:hover {
+    background-color: #fffed3;
+    color: black;
+    border: 5px;
+}
+
+  /* Clear floats after the links */
+.navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.sad_start {
+    text-align: center;
+    color: #b1aedf;
+}
+
+
+.sad__card {
+    background-color: rgb(112, 132, 144);
+    border: 3px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card-video {
+    background-color: rgb(250, 236, 197);
+    border: 5px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.video {
+    width: 15rem;
+    border-radius: 10px;
+}
