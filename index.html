@@ -27,7 +27,13 @@
         <div class="column">
         <div class="card">
             <h3>Анфиска</h3>
-            <img id="image" src="img/Khau.jpg" class="img-card" alt="">
+            <div class="fullscreen" id="fullscreen">
+                <img src="img/Khau.jpg" alt="Expanded Image">
+            </div>
+            <div id="content">
+                <img class="img-card" src="img/Khau.jpg" alt="Click to Expand" onclick="expandImage(this)">
+            </div>
+            
     
             <h4>Это анфиска! Самая храбрая кошка из нашего двора! Из-за тяжёлого детсва она не особо любит людей но иногда даёт себя в руки.</h4>
         </div>
@@ -37,7 +43,14 @@
         <div class="card">
             <h3>Вишня</h3>
     
-            <img src="img/Pii.jpg" class="img-card" alt="">
+            <div class="fullscreen" id="fullscreen">
+                <img src="img/Pii.jpg" alt="Expanded Image">
+            </div>
+            <div id="content">
+                <img class="img-card" src="img/Pii.jpg" alt="Click to Expand" onclick="expandImage(this)">
+            </div>
+            
+
             <h4>Это Вишня, и она говорит пиииии. Она очень хорошая кошка с очень интересным характером! Она любит поесть и поиграть.</h4>
         </div>
         </div>
@@ -46,7 +59,14 @@
         <div class="card">
             <h3>Зевс</h3>
     
-            <img id="image" src="img/Meuu.jpg" class="img-card" alt="">
+            <div class="fullscreen" id="fullscreen">
+                <img src="img/Meuu.jpg" alt="Expanded Image">
+            </div>
+            <div id="content">
+                <img class="img-card" src="img/Meuu.jpg" alt="Click to Expand" onclick="expandImage(this)">
+            </div>
+            
+
             <h4>Вот это Зевс! Это очень ласковый и игривый кот с очень грустным детсвом. Он любит всех вокруг и постоянно лезет тебе в руки.</h4>
         </div>
         </div>
@@ -55,7 +75,14 @@
             <div class="card">
                 <h3>Бараш</h3>
 
-                <img id="image" src="img/Baras.png" class="img-card" alt="">
+                <div class="fullscreen" id="fullscreen">
+                    <img src='img/Baras.png' alt="Expanded Image">
+                </div>
+                <div id="content">
+                    <img class="img-card" src="img/Baras.png" alt="Click to Expand" onclick="expandImage(this)">
+                </div>
+                
+
                 <h4>Это Бараш! Он является братом Вишни. Бараш сейчас находиться в доме соседей и живёт прекрасной жизнью.</h4>
             </div>
         </div>
@@ -138,6 +165,20 @@
                     </div>
                     </div>
         
+
+                    <script>
+                        function expandImage(img) {
+                            var fullscreenDiv = document.getElementById('fullscreen');
+                            fullscreenDiv.style.display = 'flex';
+                            fullscreenDiv.querySelector('img').src = img.src;
+                        }
+                    
+                        document.getElementById('fullscreen').addEventListener('click', function(event){
+                            if (event.target === this) {
+                                this.style.display = 'none';
+                            }
+                        });
+                    </script>
         
 
 
