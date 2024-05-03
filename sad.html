@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color:rgb(207, 220, 255);">
+<nav class="navbar-1">
+    <a class="nav-a-1" href="index.html">Обратно</a>
+    <a class="nav-a-1" href="pashalko.html">Пасхалко</a>
+    <a class="nav-a-1" href="special-thx.html">Отдельные спасибо</a>
+</nav>
+
+<h1 class="sad_start">Как вы знаете, где счястье там и грусть...</h1>
+
+<div class="column">
+    <div class="sad-card">
+    <h2>Потеря мамы кошки.</h2>
+    <div class="fullscreen" id="fullscreen">
+        <img src="img/sakura.jpg" alt="Expanded Image">
+    </div>
+    <div id="content">
+        <img class="img-card" src="img/sakura.jpg" alt="Click to Expand" onclick="expandImage(this)">
+    </div>
+    
+        <h3>У зевса с его братом и сестрой было очень трудное детсво из-за одного переломного момента в их жизни, а тоесть потеря их матери и не только. Было 19 июня 2023 года. Мы очень долго планировали стерелезацию кошки Сакуры. В этот раковой день при стерелизации Сакура умерла из-за наркоза. Осталось трое без защитных котят.</h3>
+    </div>
+    </div>
+
+    <div class="column">
+        <div class="sad-card">
+        <h2>Пропажа братьев зевса.</h2>
+
+        <div class="fullscreen" id="fullscreen">
+            <img src="img/2.jpg" alt="Expanded Image">
+        </div>
+        <div id="content">
+            <img class="img-card" src="img/2.jpg" alt="Click to Expand" onclick="expandImage(this)">
+        </div>
+
+            <h3>Это была обычная неделя, все три котёнка по имени Нафаня, Даша и Зевс находились в чужом дворе. Ничего не предвищало беды, но вдруг 2 котёнка пропало. Их больше никто не видел, Зевс был очень огорчён и ошаламлён. Мы долго искали котят но без успешно... На данный момент мы думаем что они мертвы. </h3>
+        </div>
+        </div>
+
+        <div class="column">
+            <div class="sad-card">
+            <h2>Смерть моего друга Черныша.</h2>
+
+            <div class="fullscreen" id="fullscreen">
+                <img src="img/chernish.jpg" alt="Expanded Image">
+            </div>
+            <div id="content">
+                <img class="img-card" src="img/chernish.jpg" alt="Click to Expand" onclick="expandImage(this)">
+            </div>
+
+                <h3>У меня, когда всех кошек во дворе не было, был кот по имнеи Черныш. Он был мне верным и всегда ходил за мной по петам. Мы кормили его, заводили домой, играли. Но в один день (где-то 5 лет назад) его отравили и он умер в неизвестном нам месте. Было очень грустно и печально. </h3>
+            </div>
+            </div>
+
+
+            <div class="column">
+                <div class="sad-card">
+                <h2>Страшная болезнь.</h2>
+
+                <div class="fullscreen" id="fullscreen">
+                    <img src="img/names.jpg" alt="Expanded Image">
+                </div>
+                <div id="content">
+                    <img class="img-card" src="img/names.jpg" alt="Click to Expand" onclick="expandImage(this)">
+                </div>
+
+                    <h3>Раньше когда у нас во дворе было очень много кошек и котят, каждую осень к нам приходил какой-то кошачий вирус. Каждый день умерало по одному коту или кошке, были чёрные времена. Погибло столько хороших котиков, у меня даже есть список со всеми погибшими. Он сверху. </h3>
+                </div>
+                </div>
+
+
+                
+
+
+                
+                <script>
+                    function expandImage(img) {
+                        var fullscreenDiv = document.getElementById('fullscreen');
+                        fullscreenDiv.style.display = 'flex';
+                        fullscreenDiv.querySelector('img').src = img.src;
+                    }
+                
+                    document.getElementById('fullscreen').addEventListener('click', function(event){
+                        if (event.target === this) {
+                            this.style.display = 'none';
+                        }
+                    });
+                </script>
+    
+</body>
+</html>

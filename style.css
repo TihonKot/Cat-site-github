@@ -6,24 +6,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-  /* Float four columns side by side */
 .column {
     float: left;
     width: 25%;
     padding: 0 10px;
 }
 
-  /* Remove extra left and right margins, due to padding */
+
 .row {margin: 0 -5px;}
 
-  /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-  /* Responsive columns */
     @media screen and (max-width: 600px) {
     .column {
     width: 100%;
@@ -142,14 +139,14 @@ body, html {
     border-radius: 10px;
 }
 
-/* Container holding the image and the text */
+
 .container1 {
     position: relative;
     text-align: center;
     color: white;
 }
 
-/* Centered text */
+
 .centered {
     position: absolute;
     top: 50%;
@@ -191,6 +188,7 @@ body, html {
     border-radius: 10px;
 }
 
+
 .nav-a {
     float: left;
     display: block;
@@ -207,8 +205,40 @@ body, html {
     border: 5px;
 }
 
-  /* Clear floats after the links */
 .navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.navbar-1 {
+    background-color: #496e99;
+    overflow: hidden;
+    transition: 0.4s ease;
+    border: 4px;
+    border-color: rgb(37, 37, 37);
+}
+
+
+.nav-a-1 {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-color: rgb(162, 177, 232);
+}
+
+.nav-a-1:hover {
+    background-color: #b5c7ed;
+    color: black;
+    border: 5px;
+}
+
+
+.navbar-1:after {
     content: "";
     display: table;
     clear: both;
@@ -217,7 +247,7 @@ body, html {
 
 .sad_start {
     text-align: center;
-    color: #b1aedf;
+    color: #3b3b3b;
 }
 
 
@@ -247,7 +277,40 @@ body, html {
     border-radius: 10px;
 }
 
-.test{
-    color: aqua;
+.sad-card {
+    background-color: rgb(176, 175, 212);
+    border: 10px;
+    border-color: rgb(8, 19, 45);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    width: 20rem;
 }
 
+.card-video-1 {
+    background-color: rgb(255, 211, 170);
+    border: 5px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50rem;
+}
+
+.video-1 {
+    width: 40rem;
+    border-radius: 10px;
+}
+
+.secret-text {
+    text-align: left;
+}
+
+.video-2 {
+    width: 35rem;
+    border-radius: 10px;
+    margin-right: 30%;
+    margin-left: 30%;
+}
