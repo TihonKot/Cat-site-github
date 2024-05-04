@@ -64,7 +64,6 @@ body, html {
 }
 
 .card {
-    background-color: white;
     border: 3px;
     border-color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -72,7 +71,8 @@ body, html {
     text-align: center;
     background-color: #f9fbe9;
     border-radius: 10px;
-    min-height: 300px
+    height: 420px;
+    width: 300px;
 }
 
 
@@ -82,13 +82,19 @@ body, html {
 
 
 .img-card {
-    width: 10rem;
+    width: 12rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.img-card-2 {
+    width: 15rem;
     border-radius: 10px;
     transition: 0.3s ease;
 }
 
 .img-card:hover {
-    width: 12rem;
+    width: 14rem;
 }
 
 
@@ -251,15 +257,6 @@ body, html {
 }
 
 
-.sad__card {
-    background-color: rgb(112, 132, 144);
-    border: 3px;
-    border-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    border-radius: 10px;
-}
 
 .card-video {
     background-color: rgb(250, 236, 197);
@@ -285,7 +282,8 @@ body, html {
     padding: 16px;
     text-align: center;
     border-radius: 10px;
-    width: 20rem;
+    height: 630px;
+    width: 300px;
 }
 
 .card-video-1 {
@@ -309,7 +307,7 @@ body, html {
 }
 
 .video-2 {
-    width: 35rem;
+    width: 30rem;
     border-radius: 10px;
     margin-right: 30%;
     margin-left: 30%;
