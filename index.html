@@ -8,14 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
 <body style="background-color:rgb(251, 249, 235);" >
 
     <nav class="navbar">
         <a class="nav-a" href="sad.html">Грустные истории</a>
         <a class="nav-a" href="special-thx.html">Отдельные спасибо</a>
+        <a href="page/new.html" class="btn">Мобильная версия сайта</a>
     </nav>
 
     <h1 class='start__text' >Жизнь моих котиков</h1>
+
+    
 
     
 
@@ -177,6 +181,10 @@
                                 this.style.display = 'none';
                             }
                         });
+
+                            if (window.innerWidth < 1024) {
+                        alert('Пожалуйста нажмите на кнопку мобильной версии!');
+                        }
                     </script>
         
 
