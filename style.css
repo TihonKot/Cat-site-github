@@ -83,6 +83,19 @@ body, html {
     padding: 1rem 1.5rem; /* Поля вокруг текста */
     text-decoration: none; /* Убираем подчёркивание */
     border-radius: 3px; /* Скругляем уголки */
+
+}
+
+.btn-1 {
+    display: block; /* Строчно-блочный элемент */
+    background: #8fd83b; /* Серый цвет фона */
+    color: #000000; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+    text-align: center;
+    width: 200px;
+    height: 55px;
 }
 
 
