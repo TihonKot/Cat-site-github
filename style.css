@@ -59,9 +59,18 @@ body, html {
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
-    max-width: 1300px;
     border-radius: 10px;
-    height: 28rem;
+    height: 29rem;
+}
+
+.container-2 {
+    background-color: rgb(253, 245, 201);
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .card {
@@ -88,7 +97,7 @@ body, html {
 
 .btn-1 {
     display: block; /* Строчно-блочный элемент */
-    background: #8fd83b; /* Серый цвет фона */
+    background: #83f95c; /* Серый цвет фона */
     color: #000000; /* Белый цвет текста */
     padding: 1rem 1.5rem; /* Поля вокруг текста */
     text-decoration: none; /* Убираем подчёркивание */
@@ -96,7 +105,26 @@ body, html {
     text-align: center;
     width: 200px;
     height: 55px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+.btn-2 {
+    display: block; /* Строчно-блочный элемент */
+    background: #3dd56b; /* Серый цвет фона */
+    color: #000000; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+    text-align: center;
+    width: 200px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
 
 
 .start__text {
@@ -160,6 +188,7 @@ body, html {
 .wide-text {
     text-align: center;
     font-size: 1.5rem;
+    margin: 10px;
 }
 
 
