@@ -93,6 +93,17 @@
                             this.style.display = 'none';
                         }
                     });
+
+                    // Получаем размер экрана
+function getScreenWidth() {
+return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
+
+// Проверяем разрешение экрана
+if (getScreenWidth() < 1024) {
+  // Перенаправляем на другой сайт
+window.location.href = 'https://tihonkot.github.io/Mobile-cats/';
+}
                 </script>
     
 </body>

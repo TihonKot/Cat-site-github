@@ -124,9 +124,7 @@ body, html {
     height: 55px;
     margin-left: auto;
     margin-right: auto;
-    margin-top
-    
-    : 10px;
+    margin-top: 10px;
 }
 
 
@@ -208,22 +206,6 @@ body, html {
 }
 
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    color: rgb(0, 0, 0); /* Text color */
-    font-size: 50px; /* Adjust as needed */
-    font-family: Arial, sans-serif; /* Font family */
-    padding: 20px; /* Add some padding */
-    background-color: rgba(255, 255, 255, 0.835);
-    border-radius: 10px;
-    width: 50rem;
-    transition: 0.4s ease;
-}
 
 
 
