@@ -87,15 +87,6 @@ body, html {
     width: 300px;
 }
 
-.btn {
-    display: inline-block; /* Строчно-блочный элемент */
-    background: #f4c442; /* Серый цвет фона */
-    color: #000000; /* Белый цвет текста */
-    padding: 1rem 1.5rem; /* Поля вокруг текста */
-    text-decoration: none; /* Убираем подчёркивание */
-    border-radius: 3px; /* Скругляем уголки */
-
-}
 
 .btn-1 {
     display: block; /* Строчно-блочный элемент */
