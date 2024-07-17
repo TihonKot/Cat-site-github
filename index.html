@@ -181,9 +181,16 @@
 
         
 
-                            if (window.innerWidth < 1024) {
-                        alert('Пожалуйста нажмите на кнопку мобильной версии!');
-                        }
+                                            // Получаем размер экрана
+function getScreenWidth() {
+return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
+
+// Проверяем разрешение экрана
+if (getScreenWidth() < 1024) {
+  // Перенаправляем на другой сайт
+window.location.href = 'https://tihonkot.github.io/Mobile-cats/';
+}
 
                         
 
